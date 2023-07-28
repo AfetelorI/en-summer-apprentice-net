@@ -11,7 +11,7 @@ public partial class Venue
 
     public string Type { get; set; } = null!;
 
-    public int? Capacity { get; set; }
+    public int Capacity { get; set; }
 
-    public virtual ICollection<Event> Events { get; set; } = new List<Event>();
+    public virtual ICollection<TicketManagerSystem.Api.Models.Event> Events { get; set; } = new List<TicketManagerSystem.Api.Models.Event>();
 }

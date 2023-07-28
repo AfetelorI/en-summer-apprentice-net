@@ -9,5 +9,5 @@ public partial class EventType
 
     public string EventTypeName { get; set; } = null!;
 
-    public virtual ICollection<Event> Events { get; set; } = new List<Event>();
+    public virtual ICollection<TicketManagerSystem.Api.Models.Event> Events { get; set; } = new List<TicketManagerSystem.Api.Models.Event>();
 }

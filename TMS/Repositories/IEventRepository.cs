@@ -1,26 +1,17 @@
 ﻿using TicketManagerSystem.Api.Models;
-using TMS.Models;
 
-namespace TicketManagerSystem.Api.Repositories
+namespace TMS.Api.Repositories
 {
     public interface IEventRepository
     {
         IEnumerable<Event> GetAll();
 
-
-
-        Event GetById(int id);
-
-
+        Task<Event> GetById(long id);
 
         int Add(Event @event);
 
-
-
         void Update(Event @event);
 
-
-
-        int Delete(int id);
+        void Delete(Event @event);
     }
 }

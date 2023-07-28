@@ -9,7 +9,7 @@ namespace TicketManagerSystem.Api.Repositories
 
 
 
-        Order GetById(int id);
+        Task<Order> GetById(int id);
 
 
 
@@ -21,6 +21,6 @@ namespace TicketManagerSystem.Api.Repositories
 
 
 
-        int Delete(int id);
+        void Delete(Order @order);
     }
 }

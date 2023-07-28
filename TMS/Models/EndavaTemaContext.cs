@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
+using TicketManagerSystem.Api.Models;
 
 namespace TMS.Models;
 
